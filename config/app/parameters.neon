@@ -1,0 +1,38 @@
+# Parameters
+#
+parameters:
+
+	# System
+	system:
+		error:
+			email: dev@dev.dev
+			presenter: Front:Error
+
+	# Database
+	database:
+		driver: pdo_pgsql
+		host: %env.db_hostname%
+		user: %env.db_user%
+		password: %env.db_password%
+		dbname: db
+		port: %env.db_port%
+
+	# Project
+	project:
+		rev: "1.0.0"
+
+	# File
+	files:
+		root: %appDir%/../data/files
+
+	# Mailing
+	mailing:
+		from: webapp@example.com
+		from_name: Zerops x Contributte - Webapp
+
+	# STMP
+	smtp:
+		host: mailpit
+		port: 1025
+#		username: fake
+#		password: fake
