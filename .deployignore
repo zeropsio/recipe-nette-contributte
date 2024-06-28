@@ -1,0 +1,8 @@
+.build/
+.docker/
+.docs/
+.github/
+tests/
+.phpstorm.meta.php
+docker-compose.yml
+phpstan.neon
