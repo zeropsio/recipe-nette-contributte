@@ -1,0 +1,37 @@
+#yamlPreprocessor=on
+project:
+  name: recipe-contributte
+  tags:
+    - zerops-recipe
+
+services:
+  - hostname: app
+    type: php-apache@8.3
+    buildFromGit: https://github.com/zeropsio/recipe-contributte@main
+    enableSubdomainAccess: true
+    envSecrets:
+      ADMIN_PASSWORD: <@generateRandomString(<24>)>
+      NETTE_DEBUG: 1 # for this example, in production it should be set to `0`
+      NETTE_ENV: dev # for this example, in production it should be set to `prod`
+
+  - hostname: db
+    type: postgresql@16
+    mode: NON_HA
+    priority: 10
+
+  - hostname: redis
+    type: keydb@6
+    mode: NON_HA
+    priority: 10
+
+  - hostname: adminer
+    type: php-apache@8.3
+    buildFromGit: https://github.com/zeropsio/recipe-adminerevo@main
+    enableSubdomainAccess: true
+    maxContainers: 1
+
+  - hostname: mailpit
+    type: go@1
+    buildFromGit: https://github.com/zeropsio/recipe-mailpit@main
+    enableSubdomainAccess: true
+    maxContainers: 1
