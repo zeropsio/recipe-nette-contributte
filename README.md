@@ -3,7 +3,7 @@
 [Nette Contributte](https://github.com/contributte/webapp-skeleton) is a web application skeleton based on Nette Framework, Doctrine and Contributte libraries.
 [Zerops](https://zerops.io) recipe for Contributte skeleton includes session and cache stored in Redis, and PostgreSQL DB with doctrine migrations.
 
-![nette](https://raw.githubusercontent.com/zeropsio/recipe-shared-assets/main/covers/svg/cover-nette.svg)
+![nette contributte](https://raw.githubusercontent.com/zeropsio/recipe-shared-assets/main/covers/svg/cover-contributte.svg)
 
 <br/>
 
