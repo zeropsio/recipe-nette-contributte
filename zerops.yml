@@ -17,7 +17,7 @@ zerops:
           path: /
 
     run:
-      base: php-apache@latest
+      base: php-apache@8.3
       os: alpine
       documentRoot: www/
       initCommands:
