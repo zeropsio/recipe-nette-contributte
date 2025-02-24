@@ -13,6 +13,9 @@ services:
       ADMIN_PASSWORD: <@generateRandomString(<24>)>
       NETTE_DEBUG: 1 # for this example, in production it should be set to `0`
       NETTE_ENV: dev # for this example, in production it should be set to `prod`
+    verticalAutoscaling:
+      minRam: 0.25
+      minFreeRamGB: 0.125
 
   - hostname: db
     type: postgresql@16
