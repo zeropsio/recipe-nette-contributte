@@ -11,11 +11,11 @@ parameters:
 	# Database
 	database:
 		driver: pdo_pgsql
-		host: %env.db_hostname%
-		user: %env.db_user%
-		password: %env.db_password%
-		dbname: db
-		port: %env.db_port%
+		host: %env.DATABASE_HOSTNAME%
+		user: %env.DATABASE_USER%
+		password: %env.DATABASE_PASSWORD%
+		dbname: %env.DATABASE_NAME%
+		port: %env.DATABASE_PORT%
 
 	# Project
 	project:

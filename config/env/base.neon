@@ -55,14 +55,14 @@ extensions:
 redis:
 	connection:
 		default:
-			uri: 'tcp://%env.redis_hostname%:%env.redis_port%'
+			uri: '%env.REDIS_URI%'
 			storage: true
 			sessions: false
 			options:
 				parameters:
 					database: 0
 		session:
-			uri: 'tcp://%env.redis_hostname%:%env.redis_port%'
+			uri: '%env.REDIS_URI%'
 			storage: false
 			sessions:
 				ttl: 86400 # 1 day

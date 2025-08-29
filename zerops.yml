@@ -28,3 +28,11 @@ zerops:
         httpGet:
           port: 80
           path: /
+
+      envVariables:
+        DATABASE_HOSTNAME: ${db_hostname}
+        DATABASE_USER: ${db_user}
+        DATABASE_PASSWORD: ${db_password}
+        DATABASE_NAME: ${db_dbName}
+        DATABASE_PORT: ${db_port}
+        REDIS_URI: 'tcp://${redis_hostname}:${redis_port}'
