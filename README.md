@@ -18,7 +18,7 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 
 - Nette running on a load balanced **Zerops PHP + Nginx** service
 - Zerops **PostgreSQL 16** service as database
-- Zerops KeyDB (**Redis**) service for session and cache
+- Zerops Valkey (**Redis**) service for session and cache
 - Proper setup for Nettrine **cache**, **optimization**, and **database migrations**
 - Logs set up to use **syslog** and accessible through Zerops GUI
 - Utilization of Zerops built-in **environment variables** system
